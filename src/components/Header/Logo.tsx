@@ -1,14 +1,26 @@
-import logo from "../../../public/assets/logo.png";
+import logoDesktop from "../../../public/assets/logo.png";
+import logoMobile from "../../../public/assets/logo-mobile.png";
 
 export default function Logo() {
   return (
-    <div className="w-[17.3rem] h-[6.3rem] md:w-[20rem] md:h-[8rem] lg:w-[25.8rem] lg:h-[10.4rem]">
-      <img
-        src={logo}
-        alt="Deyan Auto Logo"
-        className="w-full h-full"
-      />
-    </div>
+    <>
+      {/* Mobile Logo */}
+      <div className="block md:hidden w-[17.3rem] h-[6.3rem]">
+        <img
+          src={logoMobile}
+          alt="Deyan Auto Logo Mobile"
+          className="w-full h-full object-contain"
+        />
+      </div>
+
+      {/* Desktop + Tablet Logo */}
+      <div className="hidden md:block w-[20rem] h-[8rem] lg:w-[25.8rem] lg:h-[10.4rem]">
+        <img
+          src={logoDesktop}
+          alt="Deyan Auto Logo"
+          className="w-full h-full object-contain"
+        />
+      </div>
+    </>
   );
 }
-

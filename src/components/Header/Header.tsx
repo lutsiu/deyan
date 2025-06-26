@@ -2,8 +2,16 @@ import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import LanguageSelector from "./LanguageSelector";
 import CallButton from "./CallButton";
-
+import { useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
+import MobileMenu from "./MobileMenu";
 export default function Header() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  console.log(isMenuOpen);
+
   return (
     <header className="
       w-full
@@ -19,8 +27,8 @@ export default function Header() {
       <div className="w-full mx-auto flex items-center justify-between">
         <Logo />
 
-        {/* Navigation + Language + Call */}
-        <div className="flex items-center gap-[2.5rem] md:gap-[2.5rem] lg:gap-[4rem]">
+        {/* Navigation + Language + Call, DESKTOP ONE */}
+        <div className=" hidden md:flex items-center gap-[2.5rem] md:gap-[2.5rem] lg:gap-[4rem]">
           <nav className="flex items-center gap-[2.5rem] md:gap-[2.5rem] lg:gap-[4rem] text-sm"
               role="navigation"
               aria-label="Main navigation">
@@ -29,7 +37,18 @@ export default function Header() {
           </nav>
           <CallButton />
         </div>
+
+        {/* MOBILE HAMBURGER ICON */}
+
+        <div className="md:hidden">
+          <HamburgerMenu toggleMenu={toggleMenu} />
+        </div>
       </div>
+
+      {/* MOBILE SLIDE-OUT MENU */}
+      {isMenuOpen && (
+        <MobileMenu onClose={toggleMenu}/>
+      )}
     </header>
   );
 }

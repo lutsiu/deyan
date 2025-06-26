@@ -25,16 +25,24 @@ export default function LanguageSelector() {
         aria-controls="language-dropdown"
         onClick={() => setOpen((prev) => !prev)}
       >
-        <Icon icon="material-symbols-light:language" width={2.5 * 10} height={2.5 * 10} />
+        <Icon icon="material-symbols-light:language" width={25} height={25} />
         Русский
-        <Icon icon="mdi-light:chevron-down" width={2.5 * 10} height={2.5 * 10} />
+        <Icon icon="mdi-light:chevron-down" width={25} height={25} />
       </button>
 
       {open && (
         <ul
           id="language-dropdown"
           role="listbox"
-          className="absolute left-0 mt-[2.3rem] px-[2.9rem] py-[3.4rem] bg-beige-200 rounded-md shadow-md flex flex-col gap-[1.6rem] z-10"
+          className={`
+            flex flex-col gap-[1.6rem] z-10
+            mt-[1.6rem]
+            md:mt-[2.3rem]
+            text-beige-200 text-[1.6rem] font-normal
+            md:absolute md:left-0 md:px-[2.9rem] md:py-[3.4rem]
+            md:bg-beige-200 md:rounded-md md:shadow-md
+            md:text-green-600 md:mt-[2.3rem]
+          `}
         >
           <li
             role="option"
