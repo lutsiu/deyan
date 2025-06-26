@@ -1,0 +1,42 @@
+/* Talwind custom properties */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+
+  /* Manrope font weights */
+  --font-manrope-regular: 'Manrope', sans-serif;
+  --font-manrope-medium: 'Manrope', sans-serif;
+  --font-manrope-semibold: 'Manrope', sans-serif;
+  --font-manrope-bold: 'Manrope', sans-serif;
+
+  /* Beige */
+  --color-beige-100: #FFFEFC;
+  --color-beige-200: #FCF3E1;
+  --color-beige-300: #D3C9B6;
+  --color-beige-400: #AAA18D;
+  --color-beige-500: #827967;
+  --color-beige-600: #595244;
+
+  /* Green */
+  --color-green-100: #F8FFFC;
+  --color-green-200: #CEF3E7;
+  --color-green-300: #A7E7D2;
+  --color-green-400: #74B49F;
+  --color-green-500: #49816F;
+  --color-green-600: #264E41;
+
+  /* Black */
+  --color-black-100: #AAAAAA;
+  --color-black-200: #888888;
+  --color-black-300: #666666;
+  --color-black-400: #363636;
+  --color-black-500: #1D1D1D;
+  --color-black-600: #090909;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
