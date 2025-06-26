@@ -35,6 +35,19 @@
   --color-black-400: #363636;
   --color-black-500: #1D1D1D;
   --color-black-600: #090909;
+
+  /* Breakpoints */
+
+  --breakpoint-xs: 39rem;     /* 390px */
+  --breakpoint-sm: 64rem;     /* 640px */
+  --breakpoint-md: 76.8rem;   /* 768px */
+  --breakpoint-lg: 102.4rem;  /* 1024px */
+  --breakpoint-xl: 128rem;    /* 1280px */
+  --breakpoint-2xl: 144rem;   /* 1440px */
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {

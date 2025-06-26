@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
 
 export default function NavLinks() {
+  const baseClass = "text-beige-200 text-[1.6rem] font-normal";
   return (
     <>
-      <NavLink to="/" className="text-beige-200 text-[16px] font-normal">Главная</NavLink>
-      <NavLink to="/services" className="text-beige-200 text-[16px] font-normal">Услуги</NavLink>
-      <NavLink to="/blog" className="text-beige-200 text-[16px] font-normal">Блог</NavLink>
+      <NavLink to="/" className={baseClass}>Главная</NavLink>
+      <NavLink to="/services" className={baseClass}>Услуги</NavLink>
+      <NavLink to="/blog" className={baseClass}>Блог</NavLink>
     </>
   );
 }
