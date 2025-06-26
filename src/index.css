@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
 
+body {
+  font-family: 'Manrope', sans-serif;
+}
 
 @theme {
 
@@ -38,18 +44,11 @@
 
   /* Breakpoints */
 
-  --breakpoint-xs: 39rem;     /* 390px */
-  --breakpoint-sm: 64rem;     /* 640px */
-  --breakpoint-md: 76.8rem;   /* 768px */
-  --breakpoint-lg: 102.4rem;  /* 1024px */
-  --breakpoint-xl: 128rem;    /* 1280px */
-  --breakpoint-2xl: 144rem;   /* 1440px */
+  --breakpoint-xs: 390px;     
+  --breakpoint-sm: 640px;     
+  --breakpoint-md: 768px;   
+  --breakpoint-lg: 1024px; 
+  --breakpoint-xl: 1280px; 
+  --breakpoint-2xl: 1440px;   
 }
 
-:root {
-  font-size: 62.5%; /* 1rem = 10px */
-}
-
-body {
-  font-family: 'Manrope', sans-serif;
-}
