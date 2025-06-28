@@ -23,7 +23,7 @@ export default function Header() {
       2xl:pl-[3.9rem] 2xl:pr-[8.8rem] /* ≥ 1440px */
       py-[2.4rem]
       bg-green-600
-      bg-black/25 backdrop-blur-sm z-10
+      shadow-[0_4px_16px_rgba(0,0,0,0.25)]
     ">
       <div className="w-full mx-auto flex items-center justify-between">
         <Logo />
