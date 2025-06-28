@@ -1,4 +1,4 @@
-import CallButton from "./CallButton";
+import CallButton from "../Common/CallButton";
 import LanguageSelector from "./LanguageSelector";
 import NavLinks from "./NavLinks";
 import { Icon } from "@iconify/react";

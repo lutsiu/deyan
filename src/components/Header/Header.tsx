@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import LanguageSelector from "./LanguageSelector";
-import CallButton from "./CallButton";
+import CallButton from "../Common/CallButton";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import MobileMenu from "./MobileMenu";
@@ -23,6 +23,7 @@ export default function Header() {
       2xl:pl-[3.9rem] 2xl:pr-[8.8rem] /* ≥ 1440px */
       py-[2.4rem]
       bg-green-600
+      bg-black/25 backdrop-blur-sm z-10
     ">
       <div className="w-full mx-auto flex items-center justify-between">
         <Logo />
