@@ -1,11 +1,11 @@
-import HeroText from '../components/Hero/HeroText';
-import HeroReviews from '../components/Hero/HeroReviews';
-import HeroImage from '../components/Hero/HeroImage';
+import HeroText from '../components/Home/Hero/HeroText';
+import HeroReviews from '../components/Home/Hero/HeroReviews';
+import HeroImage from '../components/Home/Hero/HeroImage';
 export default function HeroSection() {
 
   return (
     <section 
-        className="w-full relative bg-green-600 overflow-hidden"
+        className="w-full relative  overflow-hidden"
         aria-label="Premium auto repair service section"
     >
       {/* Text content */}

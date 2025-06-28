@@ -1,4 +1,4 @@
-import carDesktop from "../../../public/assets/car-desktop.png";
+import carDesktop from "../../../../public/assets/car-desktop.png";
 
 export default function HeroImage() {
   return (

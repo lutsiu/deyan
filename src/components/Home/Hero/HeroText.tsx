@@ -1,4 +1,4 @@
-import CallButton from "../Common/CallButton";
+import CallButton from "../../Common/CallButton";
 
 export default function HeroText() {
   return (

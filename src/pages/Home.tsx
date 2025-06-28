@@ -1,9 +1,11 @@
 import HeroSection from "../sections/HeroSection";
+import ServicesSection from "../sections/ServicesSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-green-600">
       <HeroSection/>
+      <ServicesSection/>
     </main>
   )
 }

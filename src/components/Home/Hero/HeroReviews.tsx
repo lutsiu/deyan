@@ -1,4 +1,4 @@
-import reviews from "../../../public/assets/reviews.png";
+import reviews from "../../../../public/assets/reviews.png";
 
 export default function HeroReviews() {
   return (
