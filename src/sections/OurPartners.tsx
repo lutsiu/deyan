@@ -4,8 +4,8 @@ import PartnersList from "../components/Home/Partners/PartnersList";
 export default function OurPartnersSection() {
 
   return (
-    <section className="pt-[10.4rem]" aria-label="Our partners">
-      <SectionTitle title="наши партнёры"/>
+    <section aria-label="Our partners">
+      <SectionTitle marginTop={true} title="наши партнёры"/>
       <PartnersList/>
     </section>
   )

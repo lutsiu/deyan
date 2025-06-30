@@ -16,10 +16,9 @@ export default function ist() {
   { src: toyota, alt: "Toyota Logo" },
 ];
 
-
   return (
     <div className="bg-beige-200 px-[12.8rem] py-[4rem]">
-        <div className="py-[0.8rem] flex  gap-[5.2rem] items-center ">
+        <div className="py-[0.8rem] flex lg:gap-[5.2rem] 2xl:justify-between items-center ">
           {partners.map((partner, i) => (
             <figure key={i} className=' flex items-center justify-center'>
               <img 
