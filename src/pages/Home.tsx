@@ -1,4 +1,5 @@
 import AboutUsSection from "../sections/AboutUsSection";
+import ContactUsSection from "../sections/ContactUsSection";
 import HeroSection from "../sections/HeroSection";
 import LocationsSection from "../sections/LocationsSection";
 import OurPartnersSection from "../sections/OurPartners";
@@ -14,6 +15,7 @@ export default function Home() {
       <OurPartnersSection/>
       <AboutUsSection/>
       <LocationsSection/>
+      <ContactUsSection/>
     </main>
   )
 }
