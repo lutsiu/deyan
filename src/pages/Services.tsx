@@ -1,5 +1,30 @@
+import CallButton from "../components/Common/CallButton";
+import ServiceCard from "../components/Home/Service/ServiceCard";
+import services from "../data/Services";
+
 export default function Services() {
   return (
-    <div></div>
+    <main className="bg-green-600 px-[8.8rem] pt-[8rem] pb-[9.5rem] text-center ">
+      <header>
+        <h1 className="font-bold text-[4rem] text-beige-200 uppercase">наши услуги</h1>
+      </header>
+      <div className="mt-[7rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2.5rem]">
+        {services.slice(0, 3).map((s, i) => (
+          <ServiceCard key={i} {...s} variant="page" />
+        ))}
+      </div>
+
+      <div className="mt-[7.6rem] mb-[5.6rem] flex justify-center gap-[2.5rem] flex-wrap">
+        {services.slice(3).map((s, i) => (
+          <div key={i} className="w-full md:w-[48%] lg:w-[32%]">
+            <ServiceCard {...s} variant="page" />
+          </div>
+        ))}
+      </div>
+
+      <div className="mx-auto w-fit">
+        <CallButton/>
+      </div>
+    </main>
   )
 }

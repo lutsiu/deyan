@@ -5,7 +5,7 @@ export default function CallButton() {
     <button
       className="
         flex items-center gap-[0.8rem]
-        bg-beige-200 rounded-2xl
+        bg-beige-200 rounded-[0.6rem]
         text-[1.6rem]
         md:text-[1.5rem] lg:text-[1.6rem] font-normal 
         p-[1rem]
