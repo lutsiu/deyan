@@ -1,3 +1,4 @@
+import FloatingCallButton from "../components/Common/FloatingCallButton";
 import AboutUsSection from "../sections/AboutUsSection";
 import ContactUsSection from "../sections/ContactUsSection";
 import HeroSection from "../sections/HeroSection";
@@ -16,6 +17,8 @@ export default function Home() {
       <AboutUsSection/>
       <LocationsSection/>
       <ContactUsSection/>
+
+      <FloatingCallButton/>
     </main>
   )
 }
