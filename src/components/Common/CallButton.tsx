@@ -1,6 +1,14 @@
 import { Icon } from "@iconify/react";
+import { useNavigate } from "react-router-dom";
 
 export default function CallButton() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <button
       className="
@@ -16,7 +24,8 @@ export default function CallButton() {
         duration-150
         text-green-600
         hover:bg-white"
-      aria-label="Call us"
+        aria-label="Call us"
+        onClick={handleClick}
     >
       <Icon icon="mdi-light:phone"
          width={2.6 * 10} height={2.6 * 10}

@@ -14,7 +14,7 @@ export default function ServiceCard({ icon, label, variant }: Props) {
     <article
       className={`
         w-full relative bg-beige-200 rounded-[0.8rem] flex justify-center
-        items-end ${isPage ? "pt-[7.2rem]" : "pt-[9.2rem]"} ${isPage ? 'pb-[4.5rem]': "pb-[4.8rem]"} text-center  
+        items-end ${isPage ? "pt-[7.2rem]" : "pt-[9.2rem]"} ${isPage ? 'pb-[4.5rem]': "pb-[2.3rem]"} text-center  
         ${isPage ? "px-[2.4rem]" : ""}
       `}
       role="listitem"
@@ -30,7 +30,7 @@ export default function ServiceCard({ icon, label, variant }: Props) {
       </div>
 
       <h3 className={`
-        text-black-600 font-medium text-${isPage ?"[2rem]": "[2.4rem]"}  lg:text-nowrap 
+        text-black-600 font-medium text-${isPage ?"[2rem]": "[2.4rem]"} ${isPage? " lg:text-nowrap " : ""}
       `}>{label}</h3>
     </article>
   );
