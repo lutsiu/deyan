@@ -5,8 +5,16 @@ export default function WhyUsSection() {
 
 
   return (
-    <section className="px-[8.8rem] overflow-hidden">
-      <SectionTitle title="Почему именно мы" marginTop={true} />
+    <section className="mt-[9.6rem] 2xl:mt-[0] section-padding overflow-hidden">
+      <SectionTitle 
+        title=
+        { <>
+          ПОЧЕМУ <br className="sm:hidden" />
+          ИМЕННО МЫ
+          </> 
+        } 
+        marginTop={true} 
+      />
       <WhyUsList/>
     </section>
   )
