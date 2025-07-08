@@ -20,15 +20,18 @@ export default function AboutUsCarousel() {
 
   return (
     <>
-      <div ref={emblaRef} className="mt-[10.4rem] overflow-hidden max-h-[71.1rem]">
-        <div className="flex">
+      <div 
+        ref={emblaRef} 
+        className="mt-[10.4rem] overflow-hidden h-[29.2rem] sm:h-[unset] max-h-[71.1rem]"
+        >
+        <div className="flex h-full">
           {images.map((img, i) => (
-            <div key={i} className="min-w-full flex justify-center">
+            <div key={i} className="min-w-full flex justify-center h-full">
               <img 
                 src={img} 
                 loading="lazy"
                 alt={`Slide ${i+1} of worker`}
-                className="w-full object-cover" />
+                className="w-full object-cover h-full" />
             </div>
           ))}
         </div>

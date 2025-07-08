@@ -5,9 +5,11 @@ import AboutUsCarousel from "../components/Home/AboutUs/AboutUsCarousel";
 export default function AboutUsSection() {
 
   return (
-    <section className="px-[8.8rem]">
-      <SectionTitle title="про нас" marginTop={true}/>
-      <AboutUsArticle/>
+    <section className="section-padding">
+      <div className="hidden sm:block">
+        <SectionTitle title="про нас" marginTop={true}/>
+        <AboutUsArticle/>
+      </div>
       <AboutUsCarousel/>
     </section>
   )

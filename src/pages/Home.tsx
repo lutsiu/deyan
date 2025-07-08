@@ -17,7 +17,9 @@ export default function Home() {
       <ServicesSection/>
       {/* + */}
       <WhyUsSection/>
+      {/* + */}
       <OurPartnersSection/>
+      {/* + */}
       <AboutUsSection/>
       {/* + */}
       <LocationsSection/>
