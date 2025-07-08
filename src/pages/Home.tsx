@@ -11,12 +11,16 @@ export default function Home() {
   return (
     
     <main className="bg-green-600">
+      {/* + */}
       <HeroSection/> 
+      {/* + */}
       <ServicesSection/>
+      {/* + */}
       <WhyUsSection/>
       <OurPartnersSection/>
       <AboutUsSection/>
       <LocationsSection/>
+      {/* + */}
       <ContactUsSection/>
 
       <FloatingCallButton/>

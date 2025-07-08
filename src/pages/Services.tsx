@@ -1,6 +1,6 @@
 import CallButton from "../components/Common/CallButton";
-import ServiceCard from "../components/Home/Service/ServiceCard";
 import services from "../data/Services";
+import ServiceCardPage from "../components/ServicePage/ServicePageCard";
 
 export default function Services() {
   return (
@@ -10,14 +10,14 @@ export default function Services() {
       </header>
       <div className="mt-[7rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2.5rem]">
         {services.slice(0, 3).map((s, i) => (
-          <ServiceCard key={i} {...s} variant="page" />
+          <ServiceCardPage key={i} {...s}  />
         ))}
       </div>
 
       <div className="mt-[7.6rem] mb-[5.6rem] flex justify-center gap-[2.5rem] flex-wrap">
         {services.slice(3).map((s, i) => (
           <div key={i} className="w-full md:w-[48%] lg:w-[32%]">
-            <ServiceCard {...s} variant="page" />
+            <ServiceCardPage {...s}  />
           </div>
         ))}
       </div>

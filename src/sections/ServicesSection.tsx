@@ -7,7 +7,9 @@ export default function ServicesSection() {
 
   return (
     <section
-      className="relative pt-[20.4rem] px-[8.8rem] overflow-hidden"
+      className="relative 
+                pt-[9.6rem] 2xl:pt-[20.4rem] 
+                section-padding overflow-hidden"
       aria-labelledby="services-heading"
     >
       <SectionTitle title="Наши Услуги" />

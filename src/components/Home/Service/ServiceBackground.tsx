@@ -3,11 +3,14 @@ import servicesImage from "../../../../public/assets/services.jpg";
 
 export default function ServiceBackground() {
   return (
-    <div className="absolute inset-0 px-[8.8rem] z-0 top-[30.5rem]">
+    <div className="absolute inset-0 z-0
+                    md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[8.8rem]
+                    top-[16.9rem] 2xl:top-[30.8rem]">
       <img
         src={servicesImage}
         alt="Engine's repare"
-        className="w-full h-[46.1rem] object-cover rounded-[0.8rem]"
+        className="w-full h-[28.5rem] md:h-[35rem] lg:h-[39rem] 2xl:h-[46.1rem] 
+                  object-cover md:rounded-[0.8rem] "
       />
     </div>
   );
