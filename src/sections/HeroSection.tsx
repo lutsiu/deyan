@@ -8,12 +8,14 @@ export default function HeroSection() {
         className="w-full relative  overflow-hidden"
         aria-label="Premium auto repair service section"
     >
-      {/* Text content */}
-      <div className='pt-[13.2rem] px-[8.8rem] mx-auto'>
+      <div className="
+          pt-[6.4rem] md:pt-[8.5rem] 2xl:pt-[13.6rem] mx-auto
+          section-padding
+          relative z-10">
         <HeroText/>
+        <HeroImage/>
         <HeroReviews/>
       </div>  
-      <HeroImage/>
     </section>
   )
 }

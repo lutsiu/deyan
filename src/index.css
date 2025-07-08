@@ -45,7 +45,8 @@ body {
   /* Breakpoints */
 
   --breakpoint-xs: 390px;     
-  --breakpoint-sm: 640px;     
+  --breakpoint-car-mobile: 440px;
+  --breakpoint-sm: 576px;     
   --breakpoint-md: 768px;   
   --breakpoint-lg: 1024px; 
   --breakpoint-xl: 1280px; 
@@ -53,3 +54,6 @@ body {
   --breakpoint-3xl: 1536px;   
 }
 
+.section-padding {
+  @apply px-[2.4rem] md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[8.8rem];
+}
