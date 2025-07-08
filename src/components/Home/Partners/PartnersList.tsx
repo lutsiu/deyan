@@ -1,31 +1,17 @@
-import audi from '../../../../public/assets/audi.svg';
-import bmw from '../../../../public/assets/bmw.svg';
-import mercedes from '../../../../public/assets/mercedes.svg';
-import toyota from '../../../../public/assets/toyota.svg';
-import volkswagen from '../../../../public/assets/volkswagen.svg';
-import porsche from '../../../../public/assets/porsche.png'; // porsche svg was 2.8, though i've downloaded png version
-import type { IPartnerImage } from '../../../types/PartnerImageType';
-export default function ist() {
+import partners from "../../../data/Partners";
 
-  const partners: IPartnerImage[] = [
-  { src: bmw, alt: "BMW Logo" },
-  { src: audi, alt: "Audi Logo" },
-  { src: mercedes, alt: "Mercedes-Benz Logo" },
-  { src: volkswagen, alt: "Volkswagen Logo" },
-  { src: porsche, alt: "Porsche Logo" },
-  { src: toyota, alt: "Toyota Logo" },
-];
+export default function PartnersList() {
 
   return (
-    <div className="bg-beige-200 px-[12.8rem] py-[4rem]">
-        <div className="py-[0.8rem] flex lg:gap-[5.2rem] 2xl:justify-between items-center ">
+    <div className="bg-beige-200 sm:px-[2.4rem] md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[12.8rem] py-[4rem]">
+        <div className="py-[0.8rem] flex lg:gap-[5.2rem] xl:justify-between items-center  ">
           {partners.map((partner, i) => (
-            <figure key={i} className=' flex items-center justify-center'>
+            <figure key={i} className='flex items-center justify-center'>
               <img 
                 src={partner.src}
                 alt={partner.alt}
                 loading='lazy'
-                className='object-contain h-full max-w-full' />
+                className='object-contain h-full max-w-full w-fit' />
             </figure>
           ))}
         </div>

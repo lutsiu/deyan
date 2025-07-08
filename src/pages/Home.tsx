@@ -19,6 +19,7 @@ export default function Home() {
       <WhyUsSection/>
       <OurPartnersSection/>
       <AboutUsSection/>
+      {/* + */}
       <LocationsSection/>
       {/* + */}
       <ContactUsSection/>

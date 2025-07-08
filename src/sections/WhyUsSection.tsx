@@ -5,7 +5,7 @@ export default function WhyUsSection() {
 
 
   return (
-    <section className="mt-[10.6rem] 2xl:mt-[0] section-padding overflow-hidden">
+    <section className="mt-[10.6rem] sm:mt-[7rem] 2xl:mt-[0] section-padding overflow-hidden">
       <SectionTitle 
         title=
         { <>

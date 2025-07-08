@@ -6,7 +6,7 @@ interface SectionTitleProps {
 
 export default function SectionTitle({ title, id, marginTop }: SectionTitleProps) {
   return (
-    <header className={`text-center 2xl:mb-[4.8rem] ${marginTop ? "2xl:mt-[10.4rem]" : ""}`}>
+    <header className={`text-center md:mb-[4.8rem] ${marginTop ? "md:mt-[7rem] 2xl:mt-[10.4rem]" : ""}`}>
       <h2
         id={id}
         className="text-beige-200 uppercase font-bold text-[2.4rem] sm:text-[3rem] lg:text-[4rem]"
