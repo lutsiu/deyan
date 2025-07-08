@@ -7,7 +7,7 @@ export default function ContactUsForm() {
         id="name"
         placeholder="Ваше имя"
         required
-        className="text-black-200 border-[0.1rem] border-black-100 py-[1.8rem] pl-[2.4rem] text-[2rem]"
+        className="text-black-400 border-[0.1rem] border-black-100 py-[1.8rem] pl-[2.4rem] text-[1.6rem] sm:text-[2rem]"
       />
       <input 
         type="tel" 
@@ -15,19 +15,20 @@ export default function ContactUsForm() {
         id="phone"
         placeholder="Номер телефона"
         required
-        className="text-black-200 border-[0.1rem] border-black-100 py-[1.8rem] pl-[2.4rem] text-[2rem]"
+        className="text-black-400 border-[0.1rem] border-black-100 py-[1.8rem] pl-[2.4rem] text-[1.6rem] sm:text-[2rem]"
       />
       <textarea 
         name="message"
         id="message"
         placeholder="Сообщение"
         required
-        className="text-black-200 border-[0.1rem] border-black-100 py-[1.8rem] pl-[2.4rem] text-[2rem] h-[20rem] resize-none"
+        className="text-black-400 border-[0.1rem] border-black-100 py-[1.8rem] pl-[2.4rem]
+                     text-[1.6rem] sm:text-[2rem] h-[20rem] resize-none"
       />
       <button 
         type="submit"
         className="bg-green-600 hover:bg-green-500 transition-all duration-200
-                   text-beige-200 w-full py-[1.6rem] text-[2rem] cursor-pointer"
+                   text-beige-200 w-full py-[1.6rem] text-[1.6rem] sm:text-[2rem] cursor-pointer"
       >
         Отправить
       </button>

@@ -9,8 +9,9 @@ import WhyUsSection from "../sections/WhyUsSection";
 
 export default function Home() {
   return (
+    
     <main className="bg-green-600">
-      <HeroSection/>
+      <HeroSection/> 
       <ServicesSection/>
       <WhyUsSection/>
       <OurPartnersSection/>
