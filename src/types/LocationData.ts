@@ -3,5 +3,6 @@ export interface ILocationData {
   address: string, // address to copy below the map
   mapsUrl: string, // Google maps url 
   lat: number, // latitude
-  lng: number // longtitude
+  lng: number, // longtitude
+  isLast?: boolean
 }

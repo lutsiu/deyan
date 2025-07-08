@@ -19,7 +19,7 @@ interface Props {
 
 export default function LocationMap({ title, lat, lng }: Props) {
   return (
-    <div className="w-full h-[55.1rem] overflow-hidden">
+    <div className="w-full h-[24.8rem] sm:h-[30rem] md:h-[40rem] xl:h-[55.1rem] overflow-hidden">
       <MapContainer
         center={[lat, lng] as [number, number]}
         zoom={16}
