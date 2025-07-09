@@ -57,3 +57,8 @@ body {
 .section-padding {
   @apply px-[2.4rem] md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[8.8rem];
 }
+
+.blogAndServicesPagesContainer {
+  @apply bg-green-600 pt-[4.8rem] sm:pt-[6rem] lg:pt-[8rem] 
+          pb-[5.6rem] lg:pb-[9.5rem] text-center;
+}

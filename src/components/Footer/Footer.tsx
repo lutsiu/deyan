@@ -1,7 +1,7 @@
-import FooterCopyright from "./Footer/FooterCopyright"
-import FooterLogo from "./Footer/FooterLogo"
-import FooterNavigation from "./Footer/FooterNavigation"
-import FooterSocials from "./Footer/FooterSocials"
+import FooterCopyright from "./FooterCopyright"
+import FooterLogo from "./FooterLogo"
+import FooterNavigation from "./FooterNavigation"
+import FooterSocials from "./FooterSocials"
 export default function Footer() {
   return (
     <footer className="bg-beige-200 section-padding pt-[7rem] pb-[7rem] sm:pt-[5.6rem] sm:pb-[4.4rem]">

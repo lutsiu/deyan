@@ -1,17 +1,12 @@
 import CallButton from "../components/Common/CallButton";
 import services from "../data/Services";
 import ServiceCardPage from "../components/ServicePage/ServicePageCard";
+import PageTitle from "../components/Common/PageTitle";
 
 export default function Services() {
   return (
-    <main className="bg-green-600 px-[2.4rem] 
-                      sm:px-[4rem] lg:px-[8.8rem] pt-[4.8rem] sm:pt-[6rem] lg:pt-[8rem] 
-                      pb-[5.6rem] lg:pb-[9.5rem] text-center">
-      <header>
-        <h1 className="font-bold text-[2.4rem] sm:text-[3rem] lg:text-[4rem] text-beige-200 uppercase">
-          наши услуги
-        </h1>
-      </header>
+    <main className="blogAndServicesPagesContainer section-padding">
+      <PageTitle title="наши услуги"/>
 
       {/* Mobile + Tablet version (single container) */}
       <div className="mt-[8.4rem] grid grid-cols-1 gap-[6rem] lg:hidden">
