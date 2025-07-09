@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logoDesktop from "../../../public/assets/logo.png";
 import logoMobile from "../../../public/assets/logo-mobile.png";
 
-export default function Logo() {
+export default function HeaderLogo() {
   return (
     <Link to="/">
       {/* Mobile Logo */}

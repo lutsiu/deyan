@@ -15,6 +15,7 @@ export default function MobileMenu({ onClose }: Props) {
         fixed top-0 left-0 
         w-full h-full 
         max-w-[100vw] 
+        max-h-[100vh]
         overflow-hidden 
         bg-green-600 
         z-50
@@ -48,7 +49,7 @@ export default function MobileMenu({ onClose }: Props) {
           role="navigation"
           aria-label="Main mobile navigation"
         >
-          <NavLinks />
+          <NavLinks onClick={onClose}/>
           <LanguageSelector />
           <div className="w-[16.7rem] h-[4.4rem]">
             <CallButton />

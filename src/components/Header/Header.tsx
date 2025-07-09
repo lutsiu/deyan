@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import HeaderLogo from "./HeaderLogo";
 import NavLinks from "./NavLinks";
 import LanguageSelector from "./LanguageSelector";
 import CallButton from "../Common/CallButton";
@@ -13,16 +13,16 @@ export default function Header() {
   return (
     <header className="
       w-full
-      pl-[1.7rem] pr-[2.4rem]         /* Mobile default (390px) */
-      md:pl-[0rem] md:pr-[4rem]       /* ≥ 768px */
-      lg:pl-[0rem] lg:pr-[5rem]     /* ≥ 1024px */
-      xl:pl-[2.2rem] xl:pr-[7rem]     /* ≥ 1280px */
-      2xl:pl-[3.9rem] 2xl:pr-[8.8rem] /* ≥ 1440px */
+      pl-[1.7rem] pr-[2.4rem]         
+      md:pl-[0rem] md:pr-[4rem] 
+      lg:pl-[0rem] lg:pr-[5rem] 
+      xl:pl-[2.2rem] xl:pr-[7rem] 
+      2xl:pl-[3.9rem] 2xl:pr-[8.8rem]
       py-[2.4rem]
       bg-green-600 z-[100] shadow-[0_4px_16px_rgba(0,0,0,0.25)] 
     ">
       <div className="w-full mx-auto flex items-center justify-between">
-        <Logo />
+        <HeaderLogo />
 
         {/* Navigation + Language + Call, DESKTOP ONE */}
         <div className=" hidden md:flex items-center gap-[2.5rem] md:gap-[2.5rem] lg:gap-[4rem]">
