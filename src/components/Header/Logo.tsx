@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import logoDesktop from "../../../public/assets/logo.png";
 import logoMobile from "../../../public/assets/logo-mobile.png";
 
 export default function Logo() {
   return (
-    <>
+    <Link to="/">
       {/* Mobile Logo */}
       <div className="block md:hidden w-[17.3rem] h-[6.3rem]">
         <img
@@ -21,6 +22,6 @@ export default function Logo() {
           className="w-full h-full object-contain"
         />
       </div>
-    </>
+    </Link>
   );
 }

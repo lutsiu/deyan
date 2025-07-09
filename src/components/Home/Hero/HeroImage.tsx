@@ -13,7 +13,7 @@ export default function HeroImage() {
                 sm:w-[50rem] sm:h-[50rem]
                 md:w-[60rem]  md:h-[60rem]
                 lg:w-[80rem] lg:h-[65rem]  
-                2xl:w-[73.2rem] 2xl:h-[57.5rem]"
+                2xl:w-[73.2rem] 2xl:h-[57.5rem] "
       aria-hidden="true"
     >
       <picture>

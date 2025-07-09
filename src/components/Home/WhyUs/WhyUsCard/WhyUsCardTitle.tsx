@@ -9,7 +9,7 @@ export default function WhyUsCardTitle({title, background} : Props) {
     <h3
       className={`${
         background === "beige" ? "text-black-600" : "text-beige-200"
-      } font-semibold text-[2.4rem]`}
+      } font-semibold text-[2rem] md:text-[2.4rem]`}
     >
       {title}
     </h3>

@@ -17,14 +17,15 @@ export default function FloatingCallButton() {
         md:w-[9.6rem] md:h-[9.6rem]
         rounded-full 
         flex items-center justify-center
-        cursor-pointer"
+        cursor-pointer shadow-[0_4px_8px_rgba(116,180,159,0.15)]
+        "
       aria-label="Позвонить нам"
       onClick={handleClick}
     >
       <div className="absolute inset-0 bg-green-500 rounded-full opacity-70" />
       <Icon
         icon="mdi-light:phone"
-        className="relative z-10 text-beige-200 w-[4rem] h-[4rem] md:w-[3.8rem] md:h-[3.8rem]"
+        className="relative z-10 text-beige-200 w-[4rem] h-[4rem] md:w-[4.8rem] md:h-[4.8rem]"
       />
     </button>
   );

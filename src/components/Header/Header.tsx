@@ -19,8 +19,7 @@ export default function Header() {
       xl:pl-[2.2rem] xl:pr-[7rem]     /* ≥ 1280px */
       2xl:pl-[3.9rem] 2xl:pr-[8.8rem] /* ≥ 1440px */
       py-[2.4rem]
-      bg-green-600
-      shadow-[0_4px_16px_rgba(0,0,0,0.25)]
+      bg-green-600 z-[100] shadow-[0_4px_16px_rgba(0,0,0,0.25)] 
     ">
       <div className="w-full mx-auto flex items-center justify-between">
         <Logo />

@@ -12,7 +12,7 @@ export default function WhyUsCard({ icon, title, description, background }: IWhy
         w-full py-[4rem] sm:py-[5rem] lg:py-[7.85rem] border-[0.2rem] border-beige-200 rounded-[1.5rem] `}
     >
       {/* Container for card elements */}
-      <div className="max-w-[27.5rem] mx-auto flex flex-col gap-[2.4rem] items-center justify-center text-center">
+      <div className="max-w-[26.6rem] mx-auto flex flex-col gap-[2.4rem] items-center justify-center text-center">
         <WhyUsCardIcon background={background} icon={icon} />
         <WhyUsCardTitle background={background} title={title}/>
         <WhyUsCardDescription background={background} description={description}/>
