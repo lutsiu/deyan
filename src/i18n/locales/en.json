@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "blog": "Blog"
+  },
+  "button": {
+    "callUs": "Call us"
+  },
+  "language": {
+    "russian": "Russian",
+    "english": "English",
+    "polish": "Polish"
+  },
+  "hero": {
+    "titleMobile": "Auto repair\nin Warsaw",
+    "titleDesktop": "Premium\nAuto repair",
+    "subtitle": "Fast. Reliable. Affordable.",
+    "clients": "HAPPY CLIENTS",
+    "callUs": "Call us"
+  },
+  "services": {
+    "title": "Our Services",
+    "seeAll": "See All",
+    "items": {
+      "tire": "Tire Fitting",
+      "diagnostic": "Repair & Diagnostics",
+      "maintenance": "Maintenance Service",
+      "moto": "Motorbike Service",
+      "ac": "AC Refilling"
+    }
+  },
+  "why": {
+    "title": {
+      "first": "WHY",
+      "second": "US"
+    },
+    "speedTitle": "Speed and Quality",
+    "speedText": "Fast service without compromising quality — always on time and top level.",
+    "languagesTitle": "Barrier-Free Communication",
+    "languagesText": "Three languages, one standard — smooth communication in Russian, Polish and English.",
+    "honestyTitle": "Transparency",
+    "honestyText": "Fair prices, clear terms, and a personal approach to every customer."
+  },
+  "partners": {
+    "title": "OUR PARTNERS"
+  },
+  "about": {
+    "title": "ABOUT US",
+    "paragraph1": "We are a <bold>premium car service in Warsaw</bold> with a special focus on high-class vehicles. As an <bold>official partner of BMW and Mercedes-Benz</bold>, we are authorized to enter service records into the service book, which preserves warranty and gives confidence to every owner.",
+    "paragraph2": "We service vehicles of brands like Porsche, Mercedes-Benz, Audi, Range Rover, and more, including motorcycles. We use <bold>original spare parts</bold> and <bold>professional equipment</bold>, and all work is performed by specialists who truly know what they’re doing."
+  },
+  "locations": {
+    "title": "LOCATIONS",
+    "center": "Warsaw Center",
+    "oldTown": "Old Town Center",
+    "piaseczno": "Piaseczno",
+    "openInMaps": "Open in Google Maps"
+  },
+  "form": {
+    "title": "CONTACT US",
+    "namePlaceholder": "Your Name",
+    "phonePlaceholder": "Phone Number",
+    "messagePlaceholder": "Message",
+    "submit": "Send"
+  },
+  "blog": {
+    "title": "Blog"
+  }
+}

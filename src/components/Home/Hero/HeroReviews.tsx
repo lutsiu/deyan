@@ -1,6 +1,9 @@
 import reviews from "../../../../public/assets/reviews.png";
+import { useTranslation } from "react-i18next";
 
 export default function HeroReviews() {
+  const { t } = useTranslation();
+
   return (
   <div className="flex flex-col sm:flex-row gap-[0.8rem] sm:gap-[1.4rem] sm:items-center
                  mt-[33.2rem] car-mobile:mt-[38rem] sm:mt-[47rem] md:mt-[60rem] lg:mt-[74rem] 2xl:mt-[14rem]">
@@ -15,7 +18,8 @@ export default function HeroReviews() {
         loading="lazy"
       />
       <p className="text-[1.4rem] sm:text-[1.6rem] text-beige-200 uppercase">
-        500+ довольных клиентов
+        <span className="font-bold">500+&nbsp;</span>
+        {t("hero.clients")}
       </p>
     </div>
   );

@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 interface Props {
-  title: string;         
-  background: 'beige' | 'green'; // controls background
+  title: string;
+  background: "beige" | "green";
 }
 
-export default function WhyUsCardTitle({title, background} : Props) {
+export default function WhyUsCardTitle({ title, background }: Props) {
+  const { t } = useTranslation();
 
   return (
     <h3
@@ -11,7 +14,7 @@ export default function WhyUsCardTitle({title, background} : Props) {
         background === "beige" ? "text-black-600" : "text-beige-200"
       } font-semibold text-[2rem] md:text-[2.4rem]`}
     >
-      {title}
+      {t(title)}
     </h3>
-  )
+  );
 }

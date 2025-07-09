@@ -1,24 +1,24 @@
 import type { IWhyUsCard } from "../types/WhyUsCardType";
 
 const whyUsCards: IWhyUsCard[] = [
-    {
-      icon: "mdi-light:clock",
-      title: "Скорость и Качество",
-      description: "Оперативный сервис без потери в качестве — всегда вовремя и на высоком уровне.",
-      background: "green",
-    },
-    {
-      icon: "mdi-light:forum",
-      title: "Общение без барьеров",
-      description: "Три языка, один стандарт — удобство общения на русском, польском и английском.",
-      background: "beige",
-    },
-    {
-      icon: "mdi-light:thumb-up",
-      title: "Прозрачность",
-      description: "Честные цены, понятные условия и индивидуальный подход к каждому клиенту.",
-      background: "green",
-    },
-  ];
-  
+  {
+    icon: "mdi-light:clock",
+    title: "why.speedTitle",
+    description: "why.speedText",
+    background: "green",
+  },
+  {
+    icon: "mdi-light:forum",
+    title: "why.languagesTitle",
+    description: "why.languagesText",
+    background: "beige",
+  },
+  {
+    icon: "mdi-light:thumb-up",
+    title: "why.honestyTitle",
+    description: "why.honestyText",
+    background: "green",
+  },
+];
+
 export default whyUsCards;

@@ -7,7 +7,7 @@ export default function AboutUsSection() {
   return (
     <section className="section-padding">
       <div className="hidden sm:block">
-        <SectionTitle title="про нас" marginTop={true}/>
+        <SectionTitle title="about.title" marginTop={true}/>
         <AboutUsArticle/>
       </div>
       <AboutUsCarousel/>

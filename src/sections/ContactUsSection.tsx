@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import ContactUsForm from "../components/Home/ContactUs/ContactUsForm";
 
 export default function ContactUsSection() {
+
+  const {t} = useTranslation();
 
   return (
     <section className="section-padding pb-[9.6rem] pt-[7.8rem] lg:pt-[10.4rem] lg:pb-[10.1rem]">
@@ -8,7 +11,9 @@ export default function ContactUsSection() {
                       px-[3.2rem] sm:px-[4rem] 
                       lg:px-[5.6rem] 
                       py-[5.9rem]  md:py-[5.1rem]"> 
-        <h4 className="text-[2.4rem] sm:text-[2.7rem] md:text-[3.2rem] font-semibold uppercase mb-[2.4rem]">написать нам</h4>
+        <h4 className="text-[2.4rem] sm:text-[2.7rem] md:text-[3.2rem] font-semibold uppercase mb-[2.4rem]">
+          {t("form.title")}
+        </h4>
         <ContactUsForm/>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { useTranslation } from "react-i18next";
 
 interface PageCardProps {
   icon: string;
@@ -6,12 +7,13 @@ interface PageCardProps {
 }
 
 export default function ServiceCardPage({ icon, label }: PageCardProps) {
+  const {t} = useTranslation();
   return (
     <article
       className="w-full relative bg-beige-200 rounded-[0.8rem] flex justify-center
                 items-center pt-[6rem] pb-[4rem] xl:pt-[7.2rem] xl:pb-[4.5rem] px-[2.4rem] text-center lg:h-[19rem] xl:h-full"
       role="listitem"
-      aria-label={label}
+      aria-label={t(label)}
     >
       <div
         className="absolute top-[-4.4rem] lg:top-[-5.2rem] left-1/2 -translate-x-1/2
@@ -23,7 +25,7 @@ export default function ServiceCardPage({ icon, label }: PageCardProps) {
       </div>
 
       <h3 className="text-black-600 font-medium text-[1.4rem] sm:text-[1.6rem] lg:text-[2rem] text-wrap 2xl:text-nowrap px-[2.3rem]">
-        {label}
+        {t(label)}
       </h3>
     </article>
   );

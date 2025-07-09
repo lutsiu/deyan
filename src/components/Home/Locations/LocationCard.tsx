@@ -1,4 +1,4 @@
-import type { ILocationData } from "../../../types/LocationData";
+import type { ILocationData } from "../../../types/LocationDataType";
 import LocationButton from "./LocationButton";
 import LocationMap from "./LocationMap";
 import LocationTitle from "./LocationTitle";

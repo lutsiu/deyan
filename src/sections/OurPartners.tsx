@@ -5,7 +5,7 @@ export default function OurPartnersSection() {
 
   return (
     <section className="hidden lg:block" aria-label="Our partners">
-      <SectionTitle marginTop={true} title="наши партнёры"/>
+      <SectionTitle marginTop={true} title="partners.title"/>
       <PartnersList/>
     </section>
   )

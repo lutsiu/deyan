@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react"
+import { useTranslation } from "react-i18next";
 
 interface Props {
   mapsUrl: string
 }
 export default function LocationButton({mapsUrl}: Props) {
-
+  const { t } = useTranslation();
   function onClick() {
     window.open(mapsUrl, "_blank") ;
   }
@@ -19,7 +20,9 @@ export default function LocationButton({mapsUrl}: Props) {
         icon="logos:google-maps"
         className="w-[2rem] h-[2.9rem] lg:w-[2.4rem] lg:h-[3.5rem]"
       />
-        <span className="text-[1.6rem] sm:text-[1.8rem] lg:text-[2rem] text-green-600 font-medium">Открыть в Google Картах</span>
+        <span className="text-[1.6rem] sm:text-[1.8rem] lg:text-[2rem] text-green-600 font-medium">
+          {t("locations.openInMaps")}
+        </span>
     </button>
   )
 }

@@ -1,11 +1,13 @@
 import { Icon } from "@iconify/react";
+import { useTranslation } from "react-i18next";
 
 interface SectionCardProps {
   icon: string;
-  label: string;
+  label: string; // i18n key 
 }
 
 export default function ServiceCardSection({ icon, label }: SectionCardProps) {
+  const { t } = useTranslation();
   return (
     <article
       className="w-full relative bg-beige-200 rounded-[0.8rem] flex justify-center
@@ -13,7 +15,7 @@ export default function ServiceCardSection({ icon, label }: SectionCardProps) {
                 lg:pt-[9.2rem] lg:pb-[2.3rem] 
                 text-center"
       role="listitem"
-      aria-label={label}
+      aria-label={t(label)}
     >
       <div
         className="absolute top-[-4rem] lg:top-[-6rem] left-1/2 -translate-x-1/2
@@ -30,7 +32,7 @@ export default function ServiceCardSection({ icon, label }: SectionCardProps) {
       </div>
 
       <h3 className="text-black-600 font-medium text-[1.6rem] sm:text-[2rem] lg:text-[2.4rem] px-[1.1rem]">
-        {label}
+        {t(label)}
       </h3>
     </article>
   );

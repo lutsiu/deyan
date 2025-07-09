@@ -31,7 +31,7 @@ export default function Blog() {
 
   return (
     <main className="blogAndServicesPagesContainer section-padding">
-      <PageTitle title="блог" />
+      <PageTitle title="blog.title" />
 
       <div className="w-full mt-[4rem] lg:mt-[5.6rem] 
                       grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  

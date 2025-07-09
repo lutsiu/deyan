@@ -6,7 +6,7 @@ import PageTitle from "../components/Common/PageTitle";
 export default function Services() {
   return (
     <main className="blogAndServicesPagesContainer section-padding">
-      <PageTitle title="наши услуги"/>
+      <PageTitle title="services.title"/>
 
       {/* Mobile + Tablet version (single container) */}
       <div className="mt-[8.4rem] grid grid-cols-1 gap-[6rem] lg:hidden">

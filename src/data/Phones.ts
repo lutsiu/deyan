@@ -2,15 +2,15 @@ import type { IPhoneNumberCard } from "../types/PhoneType"
 
 const phoneNumbers: IPhoneNumberCard[] = [
   {
-    title: "Центр Варшавы",
+    title: "center",
     phone: "+48 451 547 276",
   },
   {
-    title: "Центр Старого города",
+    title: "oldTown",
     phone: "+48 798 738 736",
   },
   {
-    title: "Пясечно",
+    title: "piaseczno",
     phone: "+48 798 756 256",
   },
 ]

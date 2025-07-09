@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 export default function CallButton() {
@@ -8,6 +9,8 @@ export default function CallButton() {
   const handleClick = () => {
     navigate("/contact");
   };
+
+  const {t} = useTranslation();
 
   return (
     <button
@@ -30,7 +33,7 @@ export default function CallButton() {
       <Icon icon="mdi-light:phone"
          width={2.6 * 10} height={2.6 * 10}
          className="md:w-[22px] md:h-[22px] lg:w-[26px] lg:h-[26px]" />
-      <span className="whitespace-nowrap">Позвонить нам</span>
+      <span className="whitespace-nowrap">{t("button.callUs")}</span>
     </button>
   );
 }

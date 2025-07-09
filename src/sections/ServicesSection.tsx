@@ -12,7 +12,7 @@ export default function ServicesSection() {
                 section-padding overflow-hidden"
       aria-labelledby="services-heading"
     >
-      <SectionTitle title="Наши Услуги" />
+      <SectionTitle title="services.title" />
       <ServiceBackground/>
       <ServiceList/>
       <ServiceWatchAllLink/>

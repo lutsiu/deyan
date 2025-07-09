@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import { useTranslation } from "react-i18next"
 
 interface Props {
   title: string
@@ -6,9 +7,10 @@ interface Props {
 }
 
 export default function PhoneNumberCard({ title, phone }: Props) {
+  const {t} = useTranslation();
   return (
     <article className="flex flex-col gap-[1.6rem] items-start sm:items-center ">
-      <h4 className="text-[2rem] lg:text-[2.4rem] font-semibold text-nowrap">{title}</h4>
+      <h4 className="text-[2rem] lg:text-[2.4rem] font-semibold text-nowrap">{t(`locations.${title}`)}</h4>
       <a href={`tel:${phone}`} 
           className="bg-green-500 font-normal text-beige-200 lg:w-[18.5rem]
                       inline-flex items-center gap-[0.8rem] 
