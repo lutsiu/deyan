@@ -6,15 +6,22 @@ export default function WhyUsSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="mt-[10.6rem] sm:mt-[7rem] 2xl:mt-[0] section-padding overflow-hidden">
+    <section
+      className="mt-[10.6rem] sm:mt-[7rem] 2xl:mt-[0] section-padding overflow-hidden"
+      role="region"
+      aria-label="Why Us section"
+      aria-labelledby="whyus-heading"
+    >
+      {/* Section heading for “Why Us” */}
       <SectionTitle
+        id="whyus-heading"
         title={
           <>
             {t("why.title.first")} <br className="sm:hidden" />
             {t("why.title.second")}
           </>
         }
-        marginTop={true}
+        marginTop
       />
       <WhyUsList />
     </section>

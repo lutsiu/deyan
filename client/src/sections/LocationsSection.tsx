@@ -5,7 +5,7 @@ import locations from "../data/Locations";
 export default function LocationsSection() {
 
   return (
-    <section className="section-padding mt-[5.6rem] 2xl:mt-[0rem]">
+    <section className="section-padding mt-[5.6rem] 2xl:mt-[0rem]" aria-label="Locations">
       <SectionTitle title="locations.title" marginTop={true} />
       <div className="mt-[4rem] 2xl:mt-[0rem]">
         {locations.map((l, i) => (

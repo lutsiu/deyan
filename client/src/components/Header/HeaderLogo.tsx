@@ -4,7 +4,8 @@ import logoMobile from "../../../public/assets/logo-mobile.png";
 
 export default function HeaderLogo() {
   return (
-    <Link to="/">
+    // Logo links back to home
+    <Link to="/" aria-label="Go to homepage">
       {/* Mobile Logo */}
       <div className="block md:hidden w-[17.3rem] h-[6.3rem]">
         <img

@@ -9,24 +9,28 @@ import WhyUsSection from "../sections/WhyUsSection";
 
 export default function Home() {
   return (
-    
-    <main className="bg-green-600">
-      {/* + */}
-      <HeroSection/> 
-      {/* + */}
-      <ServicesSection/>
-      {/* + */}
-      <WhyUsSection/>
-      {/* + */}
-      <OurPartnersSection/>
-      {/* + */}
-      <AboutUsSection/>
-      {/* + */}
-      <LocationsSection/>
-      {/* + */}
-      <ContactUsSection/>
-      {/* + */}
-      <FloatingCallButton/>
+    // Main homepage content
+    <main
+      className="bg-green-600"
+      role="main"
+      aria-label="Homepage"
+    >
+      {/* Hero banner */}
+      <HeroSection /> 
+      {/* Services overview */}
+      <ServicesSection />
+      {/* Why choose us */}
+      <WhyUsSection />
+      {/* Partner logos */}
+      <OurPartnersSection />
+      {/* About us info */}
+      <AboutUsSection />
+      {/* Location details */}
+      <LocationsSection />
+      {/* Contact form */}
+      <ContactUsSection />
+      {/* Always-on call button */}
+      <FloatingCallButton />
     </main>
   )
 }

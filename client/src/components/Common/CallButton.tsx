@@ -3,17 +3,16 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 export default function CallButton() {
-
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleClick = () => {
     navigate("/contact");
   };
 
-  const {t} = useTranslation();
-
   return (
     <button
+      type="button" // Prevents submitting any parent form
       className="
         flex items-center gap-[0.8rem]
         bg-beige-200 rounded-[0.8rem]
@@ -26,13 +25,18 @@ export default function CallButton() {
         transition-all
         duration-150
         text-green-600
-        hover:bg-white"
-        aria-label="Call us"
-        onClick={handleClick}
+        hover:bg-white
+      "
+      aria-label="Call us"
+      onClick={handleClick}
     >
-      <Icon icon="mdi-light:phone"
-         width={2.6 * 10} height={2.6 * 10}
-         className="md:w-[22px] md:h-[22px] lg:w-[26px] lg:h-[26px]" />
+      <Icon
+        icon="mdi-light:phone"
+        width={26}
+        height={26}
+        className="md:w-[22px] md:h-[22px] lg:w-[26px] lg:h-[26px]"
+        aria-hidden="true" // Decorative icon
+      />
       <span className="whitespace-nowrap">{t("button.callUs")}</span>
     </button>
   );

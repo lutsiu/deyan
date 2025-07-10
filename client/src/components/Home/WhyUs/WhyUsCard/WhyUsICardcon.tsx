@@ -5,9 +5,9 @@ interface Props {
   background: 'beige' | 'green'; // controls background
 }
 
-export default function WhyUsCardIcon({icon, background} : Props) {
-
+export default function WhyUsCardIcon({ icon, background }: Props) {
   return (
+    // Decorative icon container
     <div
       className={`
         w-[8rem] h-[8rem]
@@ -15,6 +15,8 @@ export default function WhyUsCardIcon({icon, background} : Props) {
         lg:w-[12rem] lg:h-[12rem] 
         flex items-center justify-center rounded-full
         ${background === "beige" ? "bg-green-500" : "bg-beige-200"}`}
+      aria-hidden="true"
+      role="presentation"
     >
       <Icon
         icon={icon}
@@ -24,8 +26,8 @@ export default function WhyUsCardIcon({icon, background} : Props) {
             sm:w-[5rem] sm:h-[5rem]
             lg:w-[6.4rem] lg:h-[6.4rem] 
           `}
-        aria-hidden="true"
+        aria-hidden="true" // ensure screen readers skip the graphic
       />
     </div>
-  )
+  );
 }

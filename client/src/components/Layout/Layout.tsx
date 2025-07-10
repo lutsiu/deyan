@@ -8,14 +8,14 @@ export default function Layout() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      
-      <main className="flex-1">
+
+      <main className="flex-1" role="main" aria-label="Main content of the page">
         <Outlet />
       </main>
 
       <Footer />
 
-      {/* Add ToastContainer once, outside main layout */}
+      {/* ToastContainer shows copy/form submission feedback */}
       <ToastContainer 
         position="top-right"
         autoClose={3000}
@@ -26,7 +26,9 @@ export default function Layout() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light" // or "dark"
+        theme="light" 
+        aria-live="polite"
+        role="status"
       />
     </div>
   )

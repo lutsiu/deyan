@@ -5,7 +5,7 @@ import AboutUsCarousel from "../components/Home/AboutUs/AboutUsCarousel";
 export default function AboutUsSection() {
 
   return (
-    <section className="section-padding">
+    <section className="section-padding" aria-label="About us">
       <div className="hidden sm:block">
         <SectionTitle title="about.title" marginTop={true}/>
         <AboutUsArticle/>

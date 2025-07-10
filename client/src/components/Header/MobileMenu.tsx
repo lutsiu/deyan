@@ -36,11 +36,17 @@ export default function MobileMenu({ onClose }: Props) {
       >
         {/* Close button */}
         <button
+          type="button" // prevent accidental form submission
           onClick={onClose}
           className="absolute top-[3.4rem] right-[2.4rem] text-white z-10"
           aria-label="Close menu"
         >
-          <Icon icon="system-uicons:cross" width={40} height={40} />
+          <Icon
+            icon="system-uicons:cross"
+            width={40}
+            height={40}
+            aria-hidden="true" // decorative icon
+          />
         </button>
 
         {/* Menu content */}
@@ -49,7 +55,7 @@ export default function MobileMenu({ onClose }: Props) {
           role="navigation"
           aria-label="Main mobile navigation"
         >
-          <NavLinks onClick={onClose}/>
+          <NavLinks onClick={onClose} />
           <LanguageSelector />
           <div className="w-[16.7rem] h-[4.4rem]">
             <CallButton />
