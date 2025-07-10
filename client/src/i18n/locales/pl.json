@@ -62,10 +62,18 @@
     "namePlaceholder": "Twoje imię",
     "phonePlaceholder": "Numer telefonu",
     "messagePlaceholder": "Wiadomość",
-    "submit": "Wyślij"
+    "submit": "Wyślij",
+    "sending": "Wysyłanie...",
+    "success": "Wiadomość została wysłana!",
+    "error": "Błąd podczas wysyłania. Spróbuj ponownie później."
   },
   "blog": {
     "title": "Blog"
+  },
+  "toast": {
+    "addressCopied": "Adres został skopiowany!",
+    "formSuccess": "Wiadomość została wysłana!",
+    "formError": "Wystąpił błąd. Spróbuj ponownie później."
   }
 
 }

@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^5.1.1",
     "@iconify/react": "^6.0.0",
     "@tailwindcss/vite": "^4.1.10",
+    "axios": "^1.10.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.19.0",

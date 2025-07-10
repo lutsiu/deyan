@@ -62,9 +62,18 @@
     "namePlaceholder": "Your Name",
     "phonePlaceholder": "Phone Number",
     "messagePlaceholder": "Message",
-    "submit": "Send"
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send. Try again later."
   },
   "blog": {
     "title": "Blog"
+  },
+  "toast": {
+    "addressCopied": "Address copied!",
+    "formSuccess": "Message sent successfully!",
+    "formError": "Failed to send. Please try again later."
   }
+
 }
