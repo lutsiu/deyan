@@ -1,7 +1,11 @@
+import { useState } from "react";
 import carDesktop from "../../../../public/assets/hero/car-desktop.webp";
 import carMobile from "../../../../public/assets/hero/car-mobile.webp";
+import ImageSkeleton from "../../Common/ImageSkeleton";
 
 export default function HeroImage() {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div
       className="absolute right-0 pointer-events-none 
@@ -17,16 +21,22 @@ export default function HeroImage() {
       role="img"
       aria-label="Red BMW parked in auto service zone"
     >
+      {!loaded && <ImageSkeleton className="rounded-md" />}
+
       <picture>
-        {/* Use desktop image at md+ */}
-        <source srcSet={carDesktop} media="(min-width: 768px)" />
-        {/* Fallback mobile image */}
+        <source
+          srcSet={carDesktop}
+          media="(min-width: 768px)"
+          onLoad={() => setLoaded(true)} // triggers for <source> images
+        />
         <img
           src={carMobile}
-          alt="Dekstop car" // Decorative: conveyed via container aria-label
-          className="w-full h-auto select-none"
+          alt="Dekstop car"
+          className={`w-full h-auto select-none transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
           loading="eager"
           decoding="async"
+          fetchPriority="high"
+          onLoad={() => setLoaded(true)} // triggers for fallback <img>
         />
       </picture>
     </div>

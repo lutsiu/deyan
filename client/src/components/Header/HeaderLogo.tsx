@@ -12,6 +12,8 @@ export default function HeaderLogo() {
           src={logoMobile}
           alt="Deyan Auto Logo Mobile"
           className="w-full h-full object-contain"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
 
@@ -21,6 +23,8 @@ export default function HeaderLogo() {
           src={logoDesktop}
           alt="Deyan Auto Logo"
           className="w-full h-full object-contain"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
     </Link>
