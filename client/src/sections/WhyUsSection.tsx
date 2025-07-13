@@ -7,7 +7,7 @@ export default function WhyUsSection() {
 
   return (
     <section
-      className="mt-[10.6rem] sm:mt-[7rem] 2xl:mt-[0] section-padding overflow-hidden"
+      className="mt-[9.6rem] sm:mt-[7rem] 2xl:mt-[0] section-padding overflow-hidden"
       role="region"
       aria-label="Why Us section"
       aria-labelledby="whyus-heading"

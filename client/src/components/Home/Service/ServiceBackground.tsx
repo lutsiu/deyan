@@ -8,12 +8,11 @@ export default function ServiceBackground() {
 
   return (
     <div
-      className="absolute inset-0 z-0
-                 md:px-[4rem] lg:px-[5rem] xl:px-[7rem] 2xl:px-[8.8rem]
+      className="absolute left-0 right-0 z-0
                  top-[16.9rem] 2xl:top-[30.8rem]"
     >
       {/* Wrapper for consistent layout */}
-      <div className="w-full h-[28.5rem] md:h-[35rem] lg:h-[39rem] 2xl:h-[46.1rem] relative">
+      <div className="w-full h-[28.5rem] md:h-[35rem] lg:h-[42rem] 2xl:h-[46.1rem] relative">
         {!loaded && (
           <ImageSkeleton className="w-full h-full md:rounded-[0.8rem]" />
         )}

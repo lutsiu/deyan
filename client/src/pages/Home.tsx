@@ -22,7 +22,7 @@ export default function Home() {
       {/* Why choose us */}
       <WhyUsSection />
       {/* Partner logos */}
-    <OurPartnersSection />p
+      <OurPartnersSection />p
       {/* About us info */}
       <AboutUsSection />
       {/* Location details */}

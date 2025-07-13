@@ -7,7 +7,7 @@ export default function ServicesSection() {
   return (
     <section
       className="relative 
-                 pt-[9.6rem] 2xl:pt-[20.4rem] 
+                 pt-[10.6rem] 2xl:pt-[20.4rem] 
                  section-padding overflow-hidden"
       role="region"
       aria-label="Services"

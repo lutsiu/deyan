@@ -41,7 +41,8 @@ export default function AboutUsCarousel() {
       <div
         ref={emblaRef}
         className="
-          mt-[10.4rem] 
+          mt-[9.6rem]
+          sm:mt-[10.4rem] 
           overflow-hidden 
           h-[29.2rem] 
           sm:h-[40rem] 
