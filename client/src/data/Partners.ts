@@ -1,9 +1,9 @@
-import audi from '../../public/assets/audi.svg';
-import bmw from '../../public/assets/bmw.svg';
-import mercedes from '../../public/assets/mercedes.svg';
-import toyota from '../../public/assets/toyota.svg';
-import volkswagen from '../../public/assets/volkswagen.svg';
-import porsche from '../../public/assets/porsche.png'; // porsche svg was 2.8, though i've downloaded png version
+import audi from '../../public/assets/partners/audi.svg';
+import bmw from '../../public/assets/partners/bmw.svg';
+import mercedes from '../../public/assets/partners/mercedes.svg';
+import toyota from '../../public/assets/partners/toyota.svg';
+import volkswagen from '../../public/assets/partners/volkswagen.svg';
+import porsche from '../../public/assets/partners/porsche.png'; // porsche svg was 2.8, though i've downloaded png version
 import type { IPartnerImage } from '../types/PartnerImageType';
 
 const partners: IPartnerImage[] = [

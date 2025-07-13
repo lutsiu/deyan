@@ -1,5 +1,5 @@
-import carDesktop from "../../../../public/assets/car-desktop.png";
-import carMobile from "../../../../public/assets/car-mobile.png";
+import carDesktop from "../../../../public/assets/hero/car-desktop.webp";
+import carMobile from "../../../../public/assets/hero/car-mobile.webp";
 
 export default function HeroImage() {
   return (
@@ -23,7 +23,7 @@ export default function HeroImage() {
         {/* Fallback mobile image */}
         <img
           src={carMobile}
-          alt="" // Decorative: conveyed via container aria-label
+          alt="Dekstop car" // Decorative: conveyed via container aria-label
           className="w-full h-auto select-none"
           loading="eager"
           decoding="async"

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logoDesktop from "../../../public/assets/logo.png";
-import logoMobile from "../../../public/assets/logo-mobile.png";
+import logoDesktop from "../../../public/assets/logo/logo-desktop.png";
+import logoMobile from "../../../public/assets/logo/logo-mobile.png";
 
 export default function HeaderLogo() {
   return (
