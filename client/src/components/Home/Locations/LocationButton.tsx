@@ -12,7 +12,7 @@ export default function LocationButton({mapsUrl}: Props) {
 
   return (
     <button
-      className="bg-beige-200 flex gap-[0.8rem] items-center
+      className="hover:bg-beige-100 bg-beige-200 flex gap-[0.8rem] items-center
                   py-[0.8rem] sm:py-[1.2rem] lg:py-[2rem] 
                   px-[1.6rem] rounded-[0.6rem] cursor-pointer"
       onClick={onClick}>
