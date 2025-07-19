@@ -58,7 +58,7 @@ export default function MobileMenu({ onClose }: Props) {
           <NavLinks onClick={onClose} />
           <LanguageSelector />
           <div className="w-[16.7rem] h-[4.4rem]">
-            <CallButton />
+            <CallButton onClick={onClose} />
           </div>
         </nav>
       </div>

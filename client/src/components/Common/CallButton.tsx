@@ -2,12 +2,20 @@ import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-export default function CallButton() {
+interface Props {
+  onClick?: () => void;
+}
+
+export default function CallButton({onClick}: Props) {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
   const handleClick = () => {
     navigate("/contact");
+    
+    if (onClick) {
+      onClick();
+    }
   };
 
   return (

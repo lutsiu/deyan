@@ -56,8 +56,8 @@ export default function Blog() {
       <PageTitle title="blog.title" />
 
       <div className="w-full mt-[4rem] lg:mt-[5.6rem] 
-                      grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  
-                      gap-x-[2rem] gap-y-[6.4rem]">
+                grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  
+                gap-x-[2rem] gap-y-[6.4rem]">
         {paginated.map((post, index) =>
           post ? (
             <BlogPageCard
@@ -65,7 +65,7 @@ export default function Blog() {
               {...(post as InstagramPost)}
             />
           ) : (
-            <BlogPageCard key={`skeleton-${index}`} />
+            <BlogPageCard key={`skeleton-${index}`}/>
           )
         )}
       </div>
