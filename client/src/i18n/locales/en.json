@@ -68,7 +68,9 @@
     "error": "Failed to send. Try again later."
   },
   "blog": {
-    "title": "Blog"
+    "title": "Blog",
+    "play": "Click to play",
+    "loading": "Loading..."
   },
   "toast": {
     "addressCopied": "Address copied!",

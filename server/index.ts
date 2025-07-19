@@ -2,14 +2,16 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { sendMail } from "./mailer";
-
+import axios from "axios";
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({origin: "http://localhost:5173"}));
+app.use(cors({origin: "http://localhost:4173"}));
 app.use(express.json());
+
+// Code for receiving emails from clients
 
 app.post("/api/contact", async (req, res) => {
   try {
@@ -26,6 +28,27 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
+
+// Code to fetch instagram posts
+
+const IG_USER_ID = process.env.IG_USER_ID; 
+const IG_TOKEN = process.env.IG_TOKEN; 
+
+app.get("/api/instagram/posts", async (_req, res) => {
+  try {
+    const url = `https://graph.facebook.com/v23.0/${IG_USER_ID}/media`;
+    const fields = "id,caption,media_type,media_url,permalink,timestamp,thumbnail_url";
+
+    const response = await axios.get(`${url}?fields=${fields}&access_token=${IG_TOKEN}`);
+
+    res.status(200).json(response.data);
+  } catch (err: any) {
+    console.error("Instagram fetch error:", err?.response?.data || err.message);
+    res.status(500).json({ error: "Failed to fetch Instagram posts" });
+  }
+});
+
+/* === START SERVER === */
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

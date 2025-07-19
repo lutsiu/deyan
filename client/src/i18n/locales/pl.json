@@ -68,7 +68,9 @@
     "error": "Błąd podczas wysyłania. Spróbuj ponownie później."
   },
   "blog": {
-    "title": "Blog"
+    "title": "Blog",
+    "play": "Kliknij, aby odtworzyć",
+    "loading": "Ładowanie..."
   },
   "toast": {
     "addressCopied": "Adres został skopiowany!",

@@ -1,33 +1,55 @@
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 import BlogPageCard from "../components/BlogPage/BlogPageCard";
 import PageTitle from "../components/Common/PageTitle";
 import PaginationControls from "../components/BlogPage/PaginationControls";
+import type { InstagramPost } from "../types/InstagramPostType";
 
 export default function Blog() {
-  const posts = Array.from({ length: 20 }, (_, i) => ({
-    id: i,
-    title: `DEYAN AUTO – автосервис в самом центре Варшавы ${i}`,
-  }));
+  const [allPosts, setAllPosts] = useState<InstagramPost[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(6);
 
   useEffect(() => {
-    const updatePostsPerPage = () => {
-      const width = window.innerWidth;
-      if (width < 640) setPostsPerPage(2);
-      else if (width < 1024) setPostsPerPage(4);
-      else setPostsPerPage(6);
+    const fetchInstagram = async () => {
+      try {
+        const res = await fetch("http://localhost:5000/api/instagram/posts");
+        if (!res.ok) throw new Error("Network response was not ok");
+        const json = await res.json();
+        setAllPosts(json.data.slice(0, 30));
+      } catch (err: any) {
+        const msg = err.message || "Failed to load posts";
+        setError(msg);
+        toast.error(`🛑 ${msg}`, {
+          toastId: "instagram-fetch-error",
+        });
+      } finally {
+        setLoading(false);
+      }
     };
-
-    updatePostsPerPage();
-    window.addEventListener("resize", updatePostsPerPage);
-    return () => window.removeEventListener("resize", updatePostsPerPage);
+    fetchInstagram();
   }, []);
 
-  const totalPages = Math.ceil(posts.length / postsPerPage);
+  useEffect(() => {
+    const upd = () => {
+      const w = window.innerWidth;
+      if (w < 640) setPostsPerPage(2);
+      else if (w < 1024) setPostsPerPage(4);
+      else setPostsPerPage(6);
+    };
+    upd();
+    window.addEventListener("resize", upd);
+    return () => window.removeEventListener("resize", upd);
+  }, []);
+
+  const totalPages = Math.ceil(allPosts.length / postsPerPage);
   const startIdx = (currentPage - 1) * postsPerPage;
-  const paginatedPosts = posts.slice(startIdx, startIdx + postsPerPage);
+  const paginated = loading
+    ? Array.from({ length: postsPerPage })
+    : allPosts.slice(startIdx, startIdx + postsPerPage);
 
   return (
     <main className="blogAndServicesPagesContainer section-padding">
@@ -36,16 +58,25 @@ export default function Blog() {
       <div className="w-full mt-[4rem] lg:mt-[5.6rem] 
                       grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  
                       gap-x-[2rem] gap-y-[6.4rem]">
-        {paginatedPosts.map((post) => (
-          <BlogPageCard key={post.id} title={post.title} />
-        ))}
+        {paginated.map((post, index) =>
+          post ? (
+            <BlogPageCard
+              key={(post as InstagramPost).id}
+              {...(post as InstagramPost)}
+            />
+          ) : (
+            <BlogPageCard key={`skeleton-${index}`} />
+          )
+        )}
       </div>
 
-      <PaginationControls
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={setCurrentPage}
-      />
+      {!loading && !error && (
+        <PaginationControls
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      )}
     </main>
   );
 }
