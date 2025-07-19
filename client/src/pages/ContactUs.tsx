@@ -2,7 +2,7 @@ import PhoneNumberCard from "../components/ContactPage/PhoneNumberCard"
 import phoneNumbers from "../data/Phones"
 export default function Contact() {
   return (
-    <main className="bg-green-600 section-padding
+    <section className="bg-green-600 section-padding
                     pt-[11.2rem] pb-[24.4rem]
                     lg:pt-[12rem] lg:pb-[28.2rem]">
       <div className="bg-beige-200 rounded-[1.6rem] 
@@ -15,6 +15,6 @@ export default function Contact() {
           <PhoneNumberCard {...p} key={i}/>
         ))}
       </div>
-    </main>
+    </section>
   )
 }

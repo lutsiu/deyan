@@ -5,7 +5,7 @@ import PageTitle from "../components/Common/PageTitle";
 
 export default function Services() {
   return (
-    <main className="blogAndServicesPagesContainer section-padding">
+    <section className="blogAndServicesPagesContainer section-padding">
       <PageTitle title="services.title"/>
 
       {/* Mobile + Tablet version (single container) */}
@@ -33,7 +33,7 @@ export default function Services() {
       <div className="mt-[4rem] lg:mt-[7.6rem] mx-auto w-fit">
         <CallButton />
       </div>
-    </main>
+    </section>
 
   )
 }

@@ -52,7 +52,7 @@ export default function Blog() {
     : allPosts.slice(startIdx, startIdx + postsPerPage);
 
   return (
-    <main className="blogAndServicesPagesContainer section-padding">
+    <section className="blogAndServicesPagesContainer section-padding">
       <PageTitle title="blog.title" />
 
       <div className="w-full mt-[4rem] lg:mt-[5.6rem] 
@@ -77,6 +77,6 @@ export default function Blog() {
           onPageChange={setCurrentPage}
         />
       )}
-    </main>
+    </section>
   );
 }

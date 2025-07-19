@@ -76,6 +76,9 @@
     "addressCopied": "Adres został skopiowany!",
     "formSuccess": "Wiadomość została wysłana!",
     "formError": "Wystąpił błąd. Spróbuj ponownie później."
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony"
   }
 
 }
