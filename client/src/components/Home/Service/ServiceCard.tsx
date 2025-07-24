@@ -15,7 +15,7 @@ export default function ServiceCard({ icon, label }: SectionCardProps) {
       className="w-full h-full relative bg-beige-200 rounded-[0.8rem] flex justify-center
                  pt-[6rem] pb-[4rem] 
                  lg:pt-[9.2rem] lg:pb-[2.3rem] 
-                 text-center"
+                 text-center cursor-pointer"
       role="listitem"
       aria-label={translatedLabel}
     >

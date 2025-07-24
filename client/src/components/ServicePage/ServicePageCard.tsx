@@ -10,7 +10,7 @@ export default function ServiceCardPage({ icon, label }: PageCardProps) {
   const {t} = useTranslation();
   return (
     <article
-      className="w-full relative bg-beige-200 rounded-[0.8rem] flex justify-center
+      className="w-full relative bg-beige-200 rounded-[0.8rem] flex justify-center cursor-pointer
                 items-center pt-[6rem] pb-[4rem] xl:pt-[7.2rem] xl:pb-[4.5rem] px-[2.4rem] text-center lg:h-[19rem] xl:h-full"
       role="listitem"
       aria-label={t(label)}

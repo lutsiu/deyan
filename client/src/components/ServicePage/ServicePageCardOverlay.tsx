@@ -1,5 +1,6 @@
 // components/ServicePage/ServiceCardPageOverlay.tsx
 import { Icon } from "@iconify/react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 interface OverlayProps {
@@ -11,16 +12,33 @@ interface OverlayProps {
 
 export default function ServicePageCardOverlay({ icon, label, description, onClose }: OverlayProps) {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  
   return (
     <div className="fixed inset-0 z-[9999] bg-black/70 backdrop-blur-sm flex justify-center 
                     items-center px-4"
           role="dialog" 
           aria-modal="true"
-          onClick={onClose}>
-      <div className="relative bg-beige-200 rounded-[0.8rem] max-w-2xl w-full max-h-[90vh] pt-[6rem] pb-[4rem] px-6 text-center text-black-600 overflow-visible">
+          onClick={onClose}
+        
+    >
+      <div className="relative bg-beige-200 rounded-[0.8rem] max-w-2xl w-full max-h-[90vh] 
+            pt-[6rem] pb-[4rem] px-6 text-center text-black-600 overflow-visible"
+            onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-[2rem] text-black-400 hover:text-red-500 cursor-pointer"
+          className="absolute top-[0.5rem] right-[1.25rem] text-[2rem] text-black-400 hover:text-red-500 cursor-pointer"
           aria-label="Close"
         >
           ✕

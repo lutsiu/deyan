@@ -28,6 +28,13 @@
       "maintenance": "Obsługa techniczna",
       "moto": "Serwis motocykli",
       "ac": "Napełnianie klimatyzacji"
+    },
+    "descriptions": {
+      "tire": "Wymieniamy opony szybko, dokładnie i z zachowaniem pełnego bezpieczeństwa. Pracujemy na nowoczesnym sprzęcie – nie tracisz czasu i masz pewność, że wszystko zrobione jest jak trzeba.",
+      "diagnostic": "Szybko znajdujemy usterki i skutecznie je naprawiamy. Korzystamy z profesjonalnej diagnostyki i zapewniamy wysoką jakość każdej naprawy – bez zgadywania, bez opóźnień.",
+      "moto": "Twój motocykl jest w dobrych rękach. Serwisujemy dokładnie, na czas i z pasją – wiemy, jak ważna jest niezawodność i precyzja w jednośladach.",
+      "maintenance": "Dbamy o każdy szczegół – od wymiany oleju po kontrolę najdrobniejszych elementów. Robimy wszystko solidnie, szybko i z gwarancją spokoju za kierownicą.",
+      "ac": "Napełniamy i serwisujemy klimatyzację sprawnie i skutecznie. Zapewniamy świeże powietrze i pełen komfort jazdy nawet w największe upały."
     }
   },
   "why": {

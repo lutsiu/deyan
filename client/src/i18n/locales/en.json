@@ -28,6 +28,13 @@
       "maintenance": "Maintenance Service",
       "moto": "Motorbike Service",
       "ac": "AC Refilling"
+    },
+    "descriptions": {
+      "tire": "We replace tires quickly, precisely, and with full safety. Using modern equipment – you save time and get the job done right.",
+      "diagnostic": "We quickly detect and efficiently fix problems. Using professional diagnostics, we guarantee high-quality repairs with no delays.",
+      "moto": "Your motorcycle is in good hands. We service it precisely, on time, and with passion – because we know how important reliability is.",
+      "maintenance": "We take care of every detail – from oil changes to full system checks. Everything is done thoroughly, quickly, and with your peace of mind in mind.",
+      "ac": "We refill and service air conditioning systems efficiently and reliably. Enjoy cool, fresh air even during the hottest days."
     }
   },
   "why": {
