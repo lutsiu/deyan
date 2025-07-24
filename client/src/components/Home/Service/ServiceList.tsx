@@ -1,5 +1,5 @@
-import ServiceCard from "./ServiceCard";
 import services from "../../../data/Services";
+import CardWithOverlay from "./CardWithOverlay";
 
 export default function ServiceList() {
   return (
@@ -11,7 +11,7 @@ export default function ServiceList() {
     >
       {services.slice(0, 3).map((service, i) => (
         // ServiceCard is custom; list semantics provided by parent role="list"
-        <ServiceCard key={i} {...service} />
+        <CardWithOverlay key={i} {...service} />
       ))}
     </div>
   );
