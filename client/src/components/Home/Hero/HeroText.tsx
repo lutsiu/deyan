@@ -16,13 +16,8 @@ export default function HeroText() {
                    lg:text-[8.5rem] xl:text-[9.6rem] uppercase
                    leading-[140%] md:leading-[120%]"
       >
-        {/* Mobile title */}
-        <span className="block sm:hidden whitespace-pre-line">
-          {t("hero.titleMobile")}
-        </span>
-
         {/* Desktop title */}
-        <span className="hidden sm:block whitespace-pre-line">
+        <span className="block whitespace-pre-line">
           {t("hero.titleDesktop")}
         </span>
       </h1>
