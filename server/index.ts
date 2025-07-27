@@ -12,8 +12,13 @@ const PORT = process.env.PORT || 5000;
 const IG_USER_ID = process.env.IG_USER_ID;
 const IG_TOKEN = process.env.IG_TOKEN;
 
+
+const allowedOrigins = [
+  "https://deyanauto.pl",
+]
+
 // CORS and middleware
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 // ========== CONTACT FORM ==========

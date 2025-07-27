@@ -4,6 +4,7 @@ import BlogPageCard from "../components/BlogPage/BlogPageCard";
 import PageTitle from "../components/Common/PageTitle";
 import PaginationControls from "../components/BlogPage/PaginationControls";
 import type { InstagramPost } from "../types/InstagramPostType";
+import API_URL from "../data/Api";
 
 export default function Blog() {
   const [allPosts, setAllPosts] = useState<InstagramPost[]>([]);
@@ -16,7 +17,7 @@ export default function Blog() {
   useEffect(() => {
     const fetchInstagram = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/instagram/posts");
+        const res = await fetch(`${API_URL}/api/instagram/posts`);
         if (!res.ok) throw new Error("Network response was not ok");
         const json = await res.json();
         setAllPosts(json.data.slice(0, 30));
